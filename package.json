@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ldo/ldo": "^0.0.1-alpha.17",
+    "@ldo/solid-react": "^0.0.1-alpha.17",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,17 +12,20 @@
     "@types/node": "^16.18.66",
     "@types/react": "^18.2.41",
     "@types/react-dom": "^18.2.17",
+    "@types/uuid": "^9.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:ldo": "ldo build --input src/.shapes --output src/.ldo"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@ldo/cli": "^0.0.1-alpha.17",
+    "@types/jsonld": "^1.5.13",
+    "@types/shexj": "^2.1.7"
   }
 }
